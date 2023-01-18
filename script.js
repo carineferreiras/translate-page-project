@@ -17,11 +17,11 @@ function search(query){
 const buttonTranslate = document.querySelector('.buttonTranslate');
 
 
-buttonTranslate.addEventListener('translate', event => {
+buttonTranslate.addEventListener('search', event => {
     event.preventDefault()
     const form = event.target
 
-    console.log(form.translate)
+    console.log(form.search)
     search(form.search.value)
 }
 )

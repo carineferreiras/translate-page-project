@@ -23,3 +23,4 @@ buttonTranslate.addEventListener('translate', event => {
 
     console.log(form.translate)
     search(form.search.value)
+}

@@ -12,12 +12,14 @@ function search(query){
       .then (response => response.json())
       .then (data => renderSearch(data))
       .catch(error => console.log(error))
-  },
-    data: encodedParams
-};
+  };
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+const buttonTranslate = document.querySelector('.buttonTranslate');
+
+
+buttonTranslate.addEventListener('translate', event => {
+    event.preventDefault()
+    const form = event.target
+
+    console.log(form.translate)
+    search(form.search.value)
